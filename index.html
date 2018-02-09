@@ -1,157 +1,11 @@
 <!DOCTYPE html>
 <html>
-<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-<style>
-
-  body {
-    background-color: white;
-    width: 100%;
-    overflow: auto;
-    margin: 0;
-    padding: 0;
-  }
-
-#nav {
-  background-color: white;
-  height: 50px;
-  width: 100%;
-  position: fixed;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  z-index: 1;
-  font-family: 'Quicksand';
-  font-weight: bold;
-  border: 1px solid;
-  border-color:white white #e5e5e5 white;
-}
-#nav li{
-  float: right;
-  position: relative;
-}
-
-#nav a{
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-#nav a:hover{
-  background-color: black;
-  color: white;
-  transition: 0.5s;
-}
-
-.bannerwrap{
-  background-image: url(https://github.com/iPhatty/MyFiles/blob/master/IMG_8362%20v2%20copy.jpg?raw=true);
-  height: 100vmin;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.bannertext{
-  width: 80%;
-  position: absolute;
-  text-align: left;
-  padding-left: 5%;
-  margin-top: 200px;
-  height: auto;
-}
-.bannertext h1{
-  font-family: 'Quicksand',cursive;
-  color: white;
-  font-size: 5vmax;
-}
-.bannertext h2{
-  font-family: 'Quicksand',cursive;
-  color: white;
-  margin-top: -20px;
-  font-size: 3vmax;
-}
-
-.abouttitle{
-  width: 100%;
-  margin: 50px 0;
-  background-color: inherit;
-  text-align: center;
-  font-family:'Quicksand', cursive;
-}
-
-.aboutme{
-  font-family:'Quicksand', cursive;
-  background-color: inherit;
-  text-align: center;
-  width: 80%;
-  margin: 50px auto;
-}
-
-.seoul{
-  width: 90%;
-  margin: 0px auto;
-  text-align: center;
-  font-family: 'Quicksand', cursive;
-  columns: 2;
-  column-gap: 5px;
-  font-size: 12px;
-}
-
-.seoul img{
-  width: 40vmax;
-  border-radius: 5px;
-}
-
-.travel{
-  text-align: center;
-  width: 90%;
-  margin: 0px auto;
-}
-
-.travel img{
-  height: 240px;
-  width: auto;
-  border-radius: 5px;
-}
-
-.icons{
-  color: black;
-}
-
-
-@media only screen and (max-width:920px) {
-  .bannertext{
-    margin-top: 150px;
-  }
-}
-
-@media only screen and (max-width:700px) {
-  .seoul{
-    columns: 1;
-  }
-}
-
-@media only screen and (max-width:810px) {
-  .travel img{
-    height: 200px;
-  }
-}
-
-@media only screen and (max-width:675px) {
-  .travel img{
-    height: 150px;
-  }
-}
-@media only screen and (max-width:515px) {
-  .travel img{
-    height: 100px;
-  }
-}
-</style>
+<head>
+  <title>iPhatty</title>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
 
   <body>
@@ -160,7 +14,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#home">Home</a></li>
   </ul>
-    </div>
+
       <div class="bannerwrap" id="home">
         <div class="bannertext">
           <h1>Phat Ma</h1>
@@ -175,9 +29,9 @@
     <p>During Aug '15 - Aug '17, I taught English to elementary students in <b>Seoul</b>, South Korea. The reason why I did it was to explore and experience new things out of my comfort zone.</p>
   </div>
   <div class="seoul">
-    <img src="https://github.com/iPhatty/MyFiles/blob/master/grade%204.jpg?raw=true" alt="grade 4 students">
+    <img src="images/grade 4.jpg" alt="grade 4 students">
     <p>Grade 4</p>
-    <img src="https://github.com/iPhatty/MyFiles/blob/master/grade%206.jpg?raw=true" alt="grade 6 students">
+    <img src="images/grade 6.jpg" alt="grade 6 students">
     <p>Grade 6</p>
   </div>
   <div class="aboutme">
@@ -189,7 +43,9 @@
     <img src="https://scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/13743552_609665322547541_1558697_n.jpg" alt="Seoraksan">
   </div>
     <div class="aboutme">
-      <p>More of my travel shots can be found on my <a href="https://www.instagram.com/phatty_snaps/" target="_blank"><b>Instagram</b></a>
+      <p>
+        More of my travel shots can be found on my <a href="https://www.instagram.com/phatty_snaps/" target="_blank"><b>Instagram</b></a>
+      </p>
       </div>
 
   <div class="aboutme">
@@ -211,12 +67,14 @@
     <h1>Links</h1>
   </div>
   <div class="aboutme">
-  <p>Thank you very much for taking the time to read, here you will find links to my <a href="https://github.com/iPhatty/iPhatty.github.io" target="_blank"><b><u>Github repo</u></b></a>, <a href="https://www.freecodecamp.org/iphatty" target="_blank"><b><u>Free Code Camp</u></b></a> and <a href="https://www.codewars.com/users/iPhatty" target="_blank"><b><u>Code Wars</u></b></a> page:
+  <p>
+    Thank you very much for taking the time to read, here you will find links to my <a href="https://github.com/iPhatty/iPhatty.github.io" target="_blank"><b><u>Github repo</u></b></a>, <a href="https://www.freecodecamp.org/iphatty" target="_blank"><b><u>Free Code Camp</u></b></a> and <a href="https://www.codewars.com/users/iPhatty" target="_blank"><b><u>Code Wars</u></b></a> page:
+  </p>
   </div>
   <div class="aboutme">
-    <a class="icons" href="https://github.com/iPhatty/iPhatty.github.io" target='_blank'><i class="fa fa-github fa-4x"></i></a>
-    <a  href="https://www.freecodecamp.org/iphatty" target='_blank'><img src="https://cdn.rawgit.com/Deftwun/e3756a8b518cbb354425/raw/6584db8babd6cbc4ecb35ed36f0d184a506b979e/free-code-camp-logo.svg" style="height:50px;"></a>
-    <a href="https://www.codewars.com/users/iPhatty" target='_blank'><img src="codewars.svg" style = "height:50px;"></a>
+    <a class="icons" href="https://github.com/iPhatty/iPhatty.github.io" target="_blank"><i class="fa fa-github fa-4x"></i></a>
+    <a  href="https://www.freecodecamp.org/iphatty" target="_blank"><img src="https://cdn.rawgit.com/Deftwun/e3756a8b518cbb354425/raw/6584db8babd6cbc4ecb35ed36f0d184a506b979e/free-code-camp-logo.svg" style="height:50px;"></a>
+    <a href="https://www.codewars.com/users/iPhatty" target="_blank"><img src="images/codewars.svg" style = "height:50px;"></a>
   </div>
   </body>
 </html>
