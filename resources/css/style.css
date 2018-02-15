@@ -33,7 +33,27 @@ section {
 .box {
   padding: 1%;
 }
-  
+
+/* --------------------------------- */
+/* Headings */
+/* --------------------------------- */
+
+h1,
+h2 {
+  font-weight: 400;
+}
+
+h1{
+  font-size: 3em;
+  line-height: 145%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h2{
+  margin-top: 10px;
+}
+
 /* --------------------------------- */
 /* Header */
 /* --------------------------------- */
@@ -47,10 +67,43 @@ header {
   height: 100vh;
 } 
 
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.hero-text-box h1,
+.hero-text-box h2 {
+  color: #fff;
+}
+
+.hero-text-box h1:after {
+  display: block;
+  height: 2px;
+  background-color: #c0392b;
+  content: " ";
+  width: 280px;
+}
+
+.fixed {
+  background-color: #fff;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
 .main-nav {
-  float: right;
+  position: fixed;
+  top: 0;
+  right: 40px;
   list-style: none;
-  margin-top: 40px;
+  margin-top: 15px;
 }
 
 .main-nav li {
@@ -59,49 +112,28 @@ header {
 }
 
 
-#nav a{
-    display: block;
-    color: black;
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #302f2f;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    padding: 3px 4px;
+    transition: color 0.5s, border 0.5s;
 }
 
-#nav a:hover{
-  background-color: black;
-  color: white;
-  transition: 0.5s;
+.main-nav li a:hover,
+.main-nav li a:active{
+  color: #c0392b;
+  border: 1px solid #c0392b;
+  border-radius: 100px;
+  padding: 3px 4px;
 }
 
-.bannerwrap{
-  background-image: url(./images/main-img.jpg);
-  height: 100vmin;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.bannertext{
-  width: 80%;
-  position: absolute;
-  text-align: left;
-  padding-left: 5%;
-  margin-top: 200px;
-  height: auto;
-}
-.bannertext h1{
-  font-family: 'Quicksand',cursive;
-  color: white;
-  font-size: 5vmax;
-}
-.bannertext h2{
-  font-family: 'Quicksand',cursive;
-  color: white;
-  margin-top: -20px;
-  font-size: 3vmax;
-}
+/* --------------------------------- */
+/* About Section */
+/* --------------------------------- */
 
 .abouttitle{
   width: 100%;
@@ -151,31 +183,4 @@ header {
 }
 
 
-@media only screen and (max-width:920px) {
-  .bannertext{
-    margin-top: 150px;
-  }
-}
 
-@media only screen and (max-width:700px) {
-  .seoul{
-    columns: 1;
-  }
-}
-
-@media only screen and (max-width:810px) {
-  .travel img{
-    height: 200px;
-  }
-}
-
-@media only screen and (max-width:675px) {
-  .travel img{
-    height: 150px;
-  }
-}
-@media only screen and (max-width:515px) {
-  .travel img{
-    height: 100px;
-  }
-}
