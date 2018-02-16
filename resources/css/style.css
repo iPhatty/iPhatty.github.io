@@ -17,6 +17,18 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #302f2f;
+  transition: color 0.5s;
+}
+
+a:hover,
+a:active {
+  color: #c0392b;
+}
+
 /* --------------------------------- */
 /* Reusable Components */
 /* --------------------------------- */
@@ -32,6 +44,15 @@ section {
 
 .box {
   padding: 1%;
+}
+
+.afterline:after {
+  display: block;
+  height: 2px;
+  background-color: #c0392b;
+  content: " ";
+  width: 280px;
+  margin: 20px auto;
 }
 
 /* --------------------------------- */
@@ -96,6 +117,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
+  border-bottom: 1px solid #cccccc;
 }
 
 .main-nav {
@@ -140,11 +162,9 @@ header {
   margin: 50px 0;
   background-color: inherit;
   text-align: center;
-  font-family:'Quicksand', cursive;
 }
 
 .aboutme{
-  font-family:'Quicksand', cursive;
   background-color: inherit;
   text-align: center;
   width: 80%;
