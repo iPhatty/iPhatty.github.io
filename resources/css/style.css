@@ -39,7 +39,7 @@ a:active {
 }
 
 section {
-  padding: 80px 0;
+  padding: 0;
 }
 
 .box {
@@ -52,7 +52,7 @@ section {
   background-color: #c0392b;
   content: " ";
   width: 280px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 /* --------------------------------- */
@@ -159,13 +159,11 @@ header {
 
 .abouttitle{
   width: 100%;
-  margin: 50px 0;
-  background-color: inherit;
+  margin: 20px 0;
   text-align: center;
 }
 
 .aboutme{
-  background-color: inherit;
   text-align: center;
   width: 80%;
   margin: 50px auto;
@@ -209,4 +207,11 @@ header {
 }
 
 
+/* --------------------------------- */
+/* Links Section */
+/* --------------------------------- */
 
+.section-links {
+  background-color: #eeeeee;
+  padding: 1px 0;
+}
