@@ -169,18 +169,19 @@ header {
   margin: 50px auto;
 }
 
+/* Icons */
 .aboutme img {
   height: 50px;
   margin: 0 10px;
 }
+/*--*/
+
 
 .seoul{
   width: 90%;
   margin: 0px auto;
   text-align: center;
   font-family: 'Quicksand', cursive;
-  columns: 2;
-  column-gap: 5px;
   font-size: 12px;
 }
 
