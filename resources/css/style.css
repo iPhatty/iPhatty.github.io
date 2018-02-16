@@ -171,6 +171,11 @@ header {
   margin: 50px auto;
 }
 
+.aboutme img {
+  height: 50px;
+  margin: 0 10px;
+}
+
 .seoul{
   width: 90%;
   margin: 0px auto;
