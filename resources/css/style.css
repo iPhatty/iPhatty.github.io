@@ -181,12 +181,11 @@ header {
   width: 90%;
   margin: 0px auto;
   text-align: center;
-  font-family: 'Quicksand', cursive;
-  font-size: 12px;
+  font-size: 0.6em;
 }
 
 .seoul img{
-  width: 40vmax;
+  width: 80%;
   border-radius: 5px;
 }
 
