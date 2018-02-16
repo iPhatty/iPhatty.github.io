@@ -159,7 +159,7 @@ header {
 
 .abouttitle{
   width: 100%;
-  margin: 20px 0;
+  margin: 40px 0;
   text-align: center;
 }
 
@@ -214,4 +214,19 @@ header {
 .section-links {
   background-color: #eeeeee;
   padding: 1px 0;
+}
+
+/* --------------------------------- */
+/* Footer */
+/* --------------------------------- */
+
+footer {
+  background-color: #302f2f;
+  color: #c0392b;
+  padding: 40px 0;
+  font-size: 0.7em;
+}
+
+footer p {
+  text-align: center;
 }
